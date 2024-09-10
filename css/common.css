@@ -1,0 +1,382 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 16px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #fafafa;
+  color: #212121;
+  line-height: 1.5;
+}
+
+/*** Reset ***/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.list {
+  list-style: none;
+}
+
+/* ***-----*** */
+
+.slogan {
+  color: blue;
+  font-size: 1.25rem;
+
+  display: block;
+  margin-bottom: 10px;
+}
+
+.slogan:hover, .slogan:focus {
+  color: red;
+}
+
+/* ***-----*** */
+
+/*** Task - 1 ***/
+
+.box {
+  width: 27.5rem;
+  height: auto;
+  margin-right: auto;
+  margin-left: auto;
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+
+  background-color: #fff;
+}
+
+.box__list {
+  font-family: "Montserrat", sans-serif;
+
+  display: flex;
+  flex-direction: column;
+  row-gap: 1.5rem;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.box__item {
+  width: 24.5rem;
+  height: auto;
+  border-radius: 0.5rem;
+  padding: 1rem;
+
+  background-color: #f6f6fe;
+}
+
+.box__title {
+  color: #2e2f42;
+
+  font-weight: 600;
+  font-size: 1.5rem;
+  line-height: 1.33333;
+  letter-spacing: 0.04em;
+  
+  margin-bottom: 1rem;
+}
+
+.category__item {
+  color: #2e2f42;
+
+  border: 1px solid #808080;
+  border-radius: 0.25rem;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+    
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 1rem;
+  text-align: left;
+}
+
+.category__item:not(:last-child) {
+   margin-bottom: 0.5rem;
+}
+
+/* ***-----*** */
+
+/*** Task - 2 ***/
+
+.gallery {
+   display: flex;
+   flex-wrap: wrap;
+   row-gap: 48px;
+   column-gap: 24px;
+
+   justify-content: center;
+   align-items: center;
+   max-width: 1128px;
+   margin: 0 auto;
+}
+
+.gallery__img {
+   width: 360px;
+   height: 240px;
+}
+
+/* ***-----*** */
+
+/*** Task - 3 ***/
+
+.box-text {
+  max-width: 25.5rem;
+  height: auto;
+  
+  background-color: #fff;
+
+  font-family: "Montserrat", sans-serif;
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.box-text__input {
+  color: #2e2f42;
+
+  width: 22.5rem;
+  height: 2.5rem;
+
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 1rem;
+  margin-bottom: 1rem;
+
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  font-family: "Montserrat", sans-serif;
+
+  border: 0.0625rem solid #808080;
+  border-radius: 0.25rem;
+}
+
+.box-text__title {
+  color: #2e2f42;
+
+  font-weight: 600;
+  font-size: 1.5rem;
+  line-height: 1.33333;
+  letter-spacing: 0.04em;
+}
+
+/* ***-----*** */
+
+/*** Task - 4 ***/
+
+.login-form {
+  background-color: #fff;
+
+  width: 25.5rem;
+  height: auto;
+
+  font-family: "Montserrat", sans-serif;
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.login-form__label  {
+  color: #2e2f42;
+
+  display: block;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  margin-bottom: 0.5rem;
+}
+
+.login-form__email, .login-form__password {
+  display: block;
+
+  color: #2e2f42;
+
+  width: 22.5rem;
+  height: 2.5rem;
+  border-radius: 5px;
+  border: 0.0625rem solid #808080;
+
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  margin-bottom: 0.5rem;
+}
+
+.login-form__password {
+  margin-bottom: 1rem;
+}
+
+.login-form__btn {
+  background-color: #4e75ff;
+  color: #fff;
+
+  display: inline-block;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1rem;
+  width: 5.375rem;
+  height: 2.5rem;
+
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  cursor: pointer;
+}
+
+.login-form__btn:hover, .login-form__btn:focus {
+  background-color: #fff;
+  color:  #4e75ff;
+}
+
+/* ***-----*** */
+
+/*** Task - 5 ***/
+
+.widget {
+  background-color: #fff;
+
+  width: 21.5625rem;
+  height: 17.5rem;
+  border-radius: 0.5rem;
+  padding: 6.25rem 5.5rem;
+  font-family: "Montserrat", sans-serif;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.color {
+  color: #2e2f42;
+  
+  display: inline-block;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  margin-bottom: 1rem;
+}
+
+.change-color {
+  background-color: #4e75ff;
+  color: #fff;
+  
+  display: inline-block;
+  width: 148px;
+  height: 40px;
+
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  border-radius: 0.5rem;
+  border: none;
+  padding: 0.5rem 1rem;
+  
+  cursor: pointer;
+}
+
+/* ***-----*** */
+
+/*** Task - 6 ***/
+
+#controls, #boxes {
+  background-color: #f6f6fe;
+
+  width: 30.375rem;
+  height: auto;
+  border-radius: 0.5rem;
+  padding: 2rem;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+#controls {
+  font-family: "Montserrat", sans-serif;
+
+  display: flex;
+  padding: 2rem;
+  margin-bottom: 1rem;
+}
+
+#boxes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+ .controls__input, .controls__create,
+.controls__delete {
+  border: 0.0625rem solid #808080;
+  border-radius: 0.5rem;
+  
+  font-family: inherit;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  text-align: center;
+} 
+
+.controls__input {
+  background-color: inherit;
+  color: #2e2f42;
+
+  width: 9.375rem;
+  height: 2.5rem;
+  margin-right: 1rem; 
+} 
+
+.controls__create, .controls__delete {
+  width: 7.5rem;
+  height: 2.5rem;
+  padding: 8px 16px;
+  cursor: pointer;
+} 
+
+.controls__create {
+  background-color: #4e75ff;
+  color: #fff;
+
+  margin-right: 1rem;
+} 
+
+.controls__delete {
+  background-color: #ff4e4e;
+  color: #fff;
+}  
+
+/* ***-----*** */
